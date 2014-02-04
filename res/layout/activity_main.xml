@@ -1,7 +1,8 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -9,8 +10,102 @@
     tools:context=".MainActivity" >
 
     <TextView
+        android:id="@+id/tvName"
+        style="@style/tvLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName" 
+        >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tvSex"
+        style="@style/tvLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sex" />
+
+    <Spinner
+        android:id="@+id/spSex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:entries="@array/aSex" />
+
+    <TextView
+        android:id="@+id/tvClass"
+        style="@style/tvLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Class" />
+
+    <Spinner
+        android:id="@+id/spClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:entries="@array/aClass" />
+
+    <TextView
+        android:id="@+id/tvEyes"
+        style="@style/tvLabel"
+        android:text="Eyes" />
+
+    <Spinner
+        android:id="@+id/spEyes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:entries="@array/aEyes" />
+
+    <TextView
+        android:id="@+id/tvHair"
+        style="@style/tvLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hair" />
+
+    <Spinner
+        android:id="@+id/spHair"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:entries="@array/aHair" />
+
+    <RelativeLayout
+        android:id="@+id/lytButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        >
+        <Button
+        android:id="@+id/btnAvatar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
-
-</RelativeLayout>
+        android:text="See Avatar"
+        android:onClick="startAvatar" 
+         />
+    
+    <Button
+        android:id="@+id/btnStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="See Stats" 
+        android:layout_alignParentRight="true"
+        android:onClick="startStats"
+	>
+        
+    </Button>        
+    </RelativeLayout>
+        
+</LinearLayout>

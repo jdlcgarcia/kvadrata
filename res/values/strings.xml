@@ -5,4 +5,38 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
 
+    <string-array name="aSex">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    
+    <string-array name="aClass">
+        <item>White Wizard</item>
+        <item>Black Mage</item>
+        <item>Fighter</item>
+        <item>Thief</item>
+        <item>Robot</item>
+    </string-array>
+    
+    <string-array name="aHair">
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Green</item>
+        <item>Purple</item>
+        <item>Black</item>
+        <item>White</item>
+        <item>Blonde</item>
+        <item>Brown</item>
+    </string-array>
+    
+    <string-array name="aEyes">
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Green</item>
+        <item>Purple</item>
+        <item>Black</item>
+        <item>Grey</item>
+        <item>Brown</item>
+    </string-array>
+
 </resources>
