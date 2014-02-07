@@ -74,8 +74,8 @@ public class MainActivity extends Activity implements OnItemSelectedListener {
 				+ " = " + String.valueOf(c.getIntelligence()));
 		agility.setText(getString(R.string.AGIempty) + " = " + String.valueOf(c.getAgility()));
 		
-		//image = (ImageView) findViewById(R.id.ivAvatar);
-		//updateAvatar();
+		image = (ImageView) findViewById(R.id.ivAvatar);
+		updateAvatar();
 
 	}
 
@@ -123,19 +123,23 @@ public class MainActivity extends Activity implements OnItemSelectedListener {
 
 	private void updateAvatar() {
 
-		Bitmap body = BitmapFactory.decodeResource(getResources(),
-				R.drawable.naked);
+		Bitmap body;
+		if (c.getSex() == 0)
+			body = BitmapFactory.decodeResource(getResources(),R.drawable.bodymale);
+		else
+			body = BitmapFactory.decodeResource(getResources(),R.drawable.bodyfemale);
 		Bitmap spriteeyes, spritehair, spritejob;
-
-		String[] sourceEyes = { "redeyes", "blueyes", "greeneyes", "purpleyes",
+		
+		String[] sourceEyes = { "redeyes", "blueeyes", "greeneyes", "purpleeyes",
 				"blackeyes", "greyeyes", "browneyes" };
 		String[] sourceHair = { "redhair", "bluehair", "greenhair",
 				"purplehair", "blackhair", "whitehair", "blondehair",
 				"browneyes" };
-		String[] sourceJob = { "warrior", "whitewizard", "blackmage", "thief",
-				"robot" };
+		String[] sourceJob = {"whitewizard", "blackmage",  "warrior", "thief", "robot" };
 		String[] sourceSex = { "male", "female" };
 
+		
+		
 		spriteeyes = BitmapFactory.decodeResource(
 				getResources(),
 				getResources().getIdentifier(sourceEyes[c.getEyes()],
@@ -150,15 +154,16 @@ public class MainActivity extends Activity implements OnItemSelectedListener {
 				getResources().getIdentifier(
 						sourceJob[c.getJob()] + sourceSex[c.getSex()],
 						"drawable", "com.bobotosoft.kvadrata"));
-
+				Log.d(TAG,sourceJob[c.getJob()] + sourceSex[c.getSex()]);
 		try {
 			Bitmap bmOverlay = Bitmap.createBitmap(body.getWidth(),
 					body.getHeight(), body.getConfig());
 			Canvas canvas = new Canvas(bmOverlay);
 			canvas.drawBitmap(body, 0, 0, null);
-			canvas.drawBitmap(spriteeyes, 22, 18, null);
-			canvas.drawBitmap(spritehair, 22, 18, null);
-			canvas.drawBitmap(spritejob, 22, 18, null);
+			//left, top
+			canvas.drawBitmap(spriteeyes, 54, 36, null);
+			canvas.drawBitmap(spritehair, 0, 0, null);
+			canvas.drawBitmap(spritejob, 6, 60, null);
 			image.setImageBitmap(bmOverlay);
 
 		} catch (Exception e) {

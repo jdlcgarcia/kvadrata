@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Kvadrata</string>
+    <string name="app_name">Kvadrata Chargen</string>
     
     <string-array name="aSex">
         <item>Male</item>
@@ -52,5 +52,9 @@
     <!--  <string name="bSave">Save</string>
     <string name="bExport">Export</string>
     <string name="dscQR">This is the QR of your character. You can export it or save it</string> -->
+    <string name="bSeeQR">See QR</string>
+    <string name="bSave">Save</string>
+    <string name="bExport">Export</string>
+    <string name="dscQR">QR Code</string>
 
 </resources>

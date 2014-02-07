@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="aSex">
+        <item>Hombre</item>
+        <item>Mujer</item>
+    </string-array>
+    <string-array name="aJob">
+        <item>Mago Blanco</item>
+        <item>Mago Negro</item>
+        <item>Guerrero</item>
+        <item>Ladrón</item>
+        <item>Robot</item>
+    </string-array>
+    <string-array name="aHair">
+        <item>Rojo</item>
+        <item>Azul</item>
+        <item>Verde</item>
+        <item>Morado</item>
+        <item>Negro</item>
+        <item>Blanco</item>
+        <item>Rubio</item>
+        <item>Castaño</item>
+    </string-array>
+    <string-array name="aEyes">
+        <item>Rojos</item>
+        <item>Azules</item>
+        <item>Verdes</item>
+        <item>Morados</item>
+        <item>Negros</item>
+        <item>Grises</item>
+        <item>Marrón</item>
+    </string-array>
+    
+    <string name="STRempty">FUE </string>
+    <string name="CONempty">CON </string>
+    <string name="DEXempty">DES </string>
+    <string name="INTempty">INT </string>
+    <string name="AGIempty">AGI </string>
+    <string name="tst_insertname">Por favor, introduzca un nombre</string>
+    <string name="lblName">Nombre</string>
+    <string name="lblSex">Sexo</string>
+    <string name="lblJob">Clase</string>
+    <string name="lblEyes">Ojos</string>
+    <string name="lblHair">Cabello</string>
+    <string name="dscAvatar">Avatar de tu personaje</string>
+    <string name="bSeeQR">Ver QR</string>
+    <string name="bSave">Guardar</string>
+    <string name="bExport">Exportar</string>
+    <string name="dscQR">Código QR de tu personaje</string>
+
+</resources>

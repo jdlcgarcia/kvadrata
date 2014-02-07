@@ -15,12 +15,12 @@
 
         <ImageView
             android:id="@+id/ivAvatar"
-            android:layout_width="56dp"
-            android:layout_height="80dp"
+            android:layout_width="48dp"
+            android:layout_height="105dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginRight="25dp"
-            android:src="@drawable/naked" 
+            android:src="@drawable/bodymale" 
             android:contentDescription="@string/dscAvatar"/>
 
         <TextView
@@ -136,7 +136,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="startQR"
-        android:text="See QR" 
+        android:text="@string/bSeeQR" 
         android:layout_gravity="center_horizontal"/>
  
 </LinearLayout>
