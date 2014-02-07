@@ -2,22 +2,18 @@
 <resources>
 
     <string name="app_name">Kvadrata</string>
-    <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
-
+    
     <string-array name="aSex">
         <item>Male</item>
         <item>Female</item>
     </string-array>
-    
-    <string-array name="aClass">
+    <string-array name="aJob">
         <item>White Wizard</item>
         <item>Black Mage</item>
         <item>Fighter</item>
         <item>Thief</item>
         <item>Robot</item>
     </string-array>
-    
     <string-array name="aHair">
         <item>Red</item>
         <item>Blue</item>
@@ -28,7 +24,6 @@
         <item>Blonde</item>
         <item>Brown</item>
     </string-array>
-    
     <string-array name="aEyes">
         <item>Red</item>
         <item>Blue</item>
@@ -38,5 +33,24 @@
         <item>Grey</item>
         <item>Brown</item>
     </string-array>
+
+    <string name="title_activity_avatar">AvatarActivity</string>
+    <string name="title_activity_qr">QRActivity</string>
+    <string name="STRempty">STR </string>
+    <string name="CONempty">CON </string>
+    <string name="DEXempty">DEX </string>
+    <string name="INTempty">INT </string>
+    <string name="AGIempty">AGI </string>
+    <string name="tst_insertname">Please insert a name</string>
+    <string name="lblName">Name</string>
+    <string name="lblSex">Sex</string>
+    <string name="lblJob">Job</string>
+    <string name="lblEyes">Eyes</string>
+    <string name="lblHair">Hair</string>
+    <!--  <string name="bSeeQR">See QR</string> -->
+    <string name="dscAvatar">Avatar of your character</string>
+    <!--  <string name="bSave">Save</string>
+    <string name="bExport">Export</string>
+    <string name="dscQR">This is the QR of your character. You can export it or save it</string> -->
 
 </resources>

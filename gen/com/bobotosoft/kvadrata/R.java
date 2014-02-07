@@ -9,9 +9,9 @@ package com.bobotosoft.kvadrata;
 
 public final class R {
     public static final class array {
-        public static final int aClass=0x7f060001;
         public static final int aEyes=0x7f060003;
         public static final int aHair=0x7f060002;
+        public static final int aJob=0x7f060001;
         public static final int aSex=0x7f060000;
     }
     public static final class attr {
@@ -27,36 +27,80 @@ public final class R {
         public static final int activity_vertical_margin=0x7f040001;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int blackeyes=0x7f020000;
+        public static final int blackhairfemale=0x7f020001;
+        public static final int blackhairmale=0x7f020002;
+        public static final int blondehairfemale=0x7f020003;
+        public static final int blondehairmale=0x7f020004;
+        public static final int blueeyes=0x7f020005;
+        public static final int bluehairfemale=0x7f020006;
+        public static final int bluehairmale=0x7f020007;
+        public static final int blueyes=0x7f020008;
+        public static final int bodyfemale=0x7f020009;
+        public static final int bodymale=0x7f02000a;
+        public static final int browneyes=0x7f02000b;
+        public static final int brownhairfemale=0x7f02000c;
+        public static final int brownhairmale=0x7f02000d;
+        public static final int greeneyes=0x7f02000e;
+        public static final int greenhairfemale=0x7f02000f;
+        public static final int greenhairmale=0x7f020010;
+        public static final int greyeyes=0x7f020011;
+        public static final int ic_launcher=0x7f020012;
+        public static final int naked=0x7f020013;
+        public static final int pinkhairfemale=0x7f020014;
+        public static final int pinkhairmale=0x7f020015;
+        public static final int purpleyes=0x7f020016;
+        public static final int redeyes=0x7f020017;
+        public static final int redhairfemale=0x7f020018;
+        public static final int redhairmale=0x7f020019;
+        public static final int whiteeyes=0x7f02001a;
+        public static final int whitehairfemale=0x7f02001b;
+        public static final int whitehairmale=0x7f02001c;
     }
     public static final class id {
-        public static final int action_settings=0x7f09000e;
-        public static final int btnAvatar=0x7f09000c;
-        public static final int btnStats=0x7f09000d;
-        public static final int etName=0x7f090002;
-        public static final int imageView1=0x7f090000;
-        public static final int lytButtons=0x7f09000b;
-        public static final int spClass=0x7f090006;
-        public static final int spEyes=0x7f090008;
-        public static final int spHair=0x7f09000a;
-        public static final int spSex=0x7f090004;
-        public static final int tvClass=0x7f090005;
-        public static final int tvEyes=0x7f090007;
-        public static final int tvHair=0x7f090009;
-        public static final int tvName=0x7f090001;
-        public static final int tvSex=0x7f090003;
+        public static final int bExportQR=0x7f080013;
+        public static final int bSaveQR=0x7f080012;
+        public static final int btnQR=0x7f080010;
+        public static final int etName=0x7f080007;
+        public static final int ivAvatar=0x7f080000;
+        public static final int ivQR=0x7f080011;
+        public static final int spEyes=0x7f08000d;
+        public static final int spHair=0x7f08000f;
+        public static final int spJob=0x7f08000b;
+        public static final int spSex=0x7f080009;
+        public static final int tvAgility=0x7f080005;
+        public static final int tvConstitution=0x7f080002;
+        public static final int tvDexterity=0x7f080003;
+        public static final int tvEyes=0x7f08000c;
+        public static final int tvHair=0x7f08000e;
+        public static final int tvInteligence=0x7f080004;
+        public static final int tvJob=0x7f08000a;
+        public static final int tvName=0x7f080006;
+        public static final int tvSex=0x7f080008;
+        public static final int tvStrength=0x7f080001;
     }
     public static final class layout {
-        public static final int activity_avatar=0x7f030000;
-        public static final int activity_main=0x7f030001;
-    }
-    public static final class menu {
-        public static final int main=0x7f080000;
+        public static final int activity_main=0x7f030000;
+        public static final int activity_qr=0x7f030001;
     }
     public static final class string {
-        public static final int action_settings=0x7f050001;
+        public static final int AGIempty=0x7f050007;
+        public static final int CONempty=0x7f050004;
+        public static final int DEXempty=0x7f050005;
+        public static final int INTempty=0x7f050006;
+        public static final int STRempty=0x7f050003;
         public static final int app_name=0x7f050000;
-        public static final int hello_world=0x7f050002;
+        /**   <string name="bSeeQR">See QR</string> 
+         */
+        public static final int dscAvatar=0x7f05000e;
+        public static final int lblEyes=0x7f05000c;
+        public static final int lblHair=0x7f05000d;
+        public static final int lblJob=0x7f05000b;
+        public static final int lblName=0x7f050009;
+        public static final int lblSex=0x7f05000a;
+        public static final int title_activity_avatar=0x7f050001;
+        public static final int title_activity_qr=0x7f050002;
+        public static final int tst_insertname=0x7f050008;
     }
     public static final class style {
         /** 

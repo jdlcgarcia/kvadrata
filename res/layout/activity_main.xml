@@ -9,21 +9,74 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="56dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/naked" 
+            android:contentDescription="@string/dscAvatar"/>
+
+        <TextView
+            android:id="@+id/tvStrength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ivAvatar"
+            android:text="@string/STRempty" />
+
+        <TextView
+            android:id="@+id/tvConstitution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvStrength"
+            android:layout_toRightOf="@id/ivAvatar"
+            android:text="@string/CONempty" />
+
+        <TextView
+            android:id="@+id/tvDexterity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvConstitution"
+            android:layout_toRightOf="@id/ivAvatar"
+            android:text="@string/DEXempty" />
+
+        <TextView
+            android:id="@+id/tvInteligence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvDexterity"
+            android:layout_toRightOf="@id/ivAvatar"
+            android:text="@string/INTempty" />
+
+        <TextView
+            android:id="@+id/tvAgility"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvInteligence"
+            android:layout_toRightOf="@id/ivAvatar"
+            android:text="@string/AGIempty" />
+    </RelativeLayout>
+
     <TextView
         android:id="@+id/tvName"
         style="@style/tvLabel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Name" />
+        android:text="@string/lblName" />
 
     <EditText
         android:id="@+id/etName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Name"
-        android:inputType="textPersonName" 
-        >
+        android:hint="@string/lblName"
+        android:inputType="textPersonName" >
 
         <requestFocus />
     </EditText>
@@ -33,39 +86,36 @@
         style="@style/tvLabel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sex" />
+        android:text="@string/lblSex" />
 
     <Spinner
         android:id="@+id/spSex"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        
         android:entries="@array/aSex" />
 
     <TextView
-        android:id="@+id/tvClass"
+        android:id="@+id/tvJob"
         style="@style/tvLabel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Class" />
+        android:text="@string/lblJob" />
 
     <Spinner
-        android:id="@+id/spClass"
+        android:id="@+id/spJob"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        
-        android:entries="@array/aClass" />
+        android:entries="@array/aJob" />
 
     <TextView
         android:id="@+id/tvEyes"
         style="@style/tvLabel"
-        android:text="Eyes" />
+        android:text="@string/lblEyes" />
 
     <Spinner
         android:id="@+id/spEyes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        
         android:entries="@array/aEyes" />
 
     <TextView
@@ -73,39 +123,20 @@
         style="@style/tvLabel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hair" />
+        android:text="@string/lblHair" />
 
     <Spinner
         android:id="@+id/spHair"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        
         android:entries="@array/aHair" />
 
-    <RelativeLayout
-        android:id="@+id/lytButtons"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        
-        >
-        <Button
-        android:id="@+id/btnAvatar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="See Avatar"
-        android:onClick="startAvatar" 
-         />
-    
     <Button
-        android:id="@+id/btnStats"
+        android:id="@+id/btnQR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="See Stats" 
-        android:layout_alignParentRight="true"
-        android:onClick="startStats"
-	>
-        
-    </Button>        
-    </RelativeLayout>
-        
+        android:onClick="startQR"
+        android:text="See QR" 
+        android:layout_gravity="center_horizontal"/>
+ 
 </LinearLayout>
